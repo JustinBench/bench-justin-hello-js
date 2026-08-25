@@ -1,6 +1,6 @@
 const bio = document.querySelector("#bio")
 const interests = document.querySelector("#interests")
-const goals = document.querySelector("goals")
+const goals = document.querySelector("#goals")
 
 function showBio() {
     bio.classList.remove("hidden");
