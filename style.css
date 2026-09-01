@@ -1,10 +1,19 @@
+:root {
+    --primary-color: #33aa55;
+    --secondary-color: #448866;
+    --accent-color: #b7f7c8;
+    --text-color: #eeeeee;
+    --footer-color: #224422;
+    --footer-secondary-color: #113311;
+}
+
 html, body {
     min-height: 100%;
     margin: 0;
 }
 
 body {
-    background: linear-gradient(#229944, #33aa55);
+    background: linear-gradient(var(--secondary-color), var(--primary-color));
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -15,7 +24,7 @@ header, nav {
 }
 
 header h1 {
-    color: #eeeeee;
+    color: var(--text-color);
 }
 
 main {
@@ -23,19 +32,19 @@ main {
 }
 
 #bio p {
-    color: #ddeedd;
+    color: var(--text-color);
     font-size: 1.75rem;
-    background: #448866;
-    border: 2px solid #b7f7c8;
+    background: var(--secondary-color);
+    border: 2px solid var(--accent-color);
     border-radius: 30px;
     padding: 2rem;
 }
 
 #interests {
-    border: 4px solid #b7f7c8;
+    border: 4px solid var(--accent-color);
     border-radius: 30px;
     padding: 3%;
-    background: #33bb44;
+    background: var(--primary-color);
     margin-top: 2rem;
 }
 
@@ -50,25 +59,25 @@ main {
     width: 20rem;
     height: auto;
     object-fit: scale-down;
-    border: 3px solid #b7f7c8;
+    border: 3px solid var(--accent-color);
     border-radius: 5px;
     margin: 0 auto;
 }
 
 #goals li {
-    color: #eeddee;
-    background: #44aa55;
-    border: 1px solid #b7f7c8;
+    color: var(--text-color);
+    background: var(--primary-color);
+    border: 1px solid var(--accent-color);
     border-radius: 15px;
     margin: 2%;
     padding: 1.5rem;
 }
 
 footer {
-    background: linear-gradient(#375d47, #335943);
-    border-top: 2px solid #b7f7c8;
+    background: linear-gradient(var(--footer-secondary-color), var(--footer-color));
+    border-top: 2px solid var(--accent-color);
     box-sizing: border-box;
-    color: #ffffff;
+    color: var(--text-color);
     margin-top: 2rem;
     padding: 0.85rem 1.5rem;
     text-align: center;
@@ -80,21 +89,21 @@ footer p {
 }
 
 footer a {
-    color: #b7f7c8;
+    color: var(--accent-color);
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
 }
 
 footer a:hover,
 footer a:focus-visible {
-    color: #ffeb70;
+    color: var(--accent-color);
 }
 
 .tab {
-    background-color: #173d27;
-    border: 2px solid #b7f7c8;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--accent-color);
     border-radius: 999px;
-    color: #ffffff;
+    color: var(--text-color);
     cursor: pointer;
     font-size: 0.95rem;
     font-weight: bold;
@@ -105,13 +114,13 @@ footer a:focus-visible {
 }
 
 .tab:hover {
-    background-color: #b7f7c8;
-    color: #173d27;
+    background-color: var(--accent-color);
+    color: var(--text-color);
     transform: translateY(-2px);
 }
 
 .tab:focus-visible {
-    outline: 3px solid #ffeb70;
+    outline: 3px solid var(--accent-color);
     outline-offset: 3px;
 }
 
