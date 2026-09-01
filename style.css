@@ -40,6 +40,11 @@ main {
     padding: 2rem;
 }
 
+#bio .game-embed {
+    margin: 2rem auto;
+    text-align: center;
+}
+
 #interests {
     border: 4px solid var(--accent-color);
     border-radius: 30px;
